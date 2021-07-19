@@ -1,0 +1,55 @@
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+p {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: "IBM Plex Mono", monospace;
+.copyright{
+  width: 12px;
+  height: 12px;
+}
+}
+
+#iconos {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 54px;
+  font-family: "FontAwesome5Brands-Regular";
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 28px;
+  a{
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 321px) {
+  footer{
+    flex-flow: row;
+    align-items: center;
+  }
+  
+  p {
+    text-align: left;
+    margin-left: 5%;
+  }
+  #iconos{
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+    margin-top: 10px;
+    
+  }
+}
