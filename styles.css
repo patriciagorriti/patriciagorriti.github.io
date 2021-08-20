@@ -14,6 +14,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header .bd {
@@ -96,9 +98,10 @@ header #btn-menu:checked ~ .cruz {
 
 header #btn-menu:checked ~ .menu {
   display: block;
+  z-index: 5;
 }
 
-@media (min-width: 325px) {
+@media (min-width: 321px) {
   label ~ .menu {
     display: block;
   }
@@ -152,23 +155,23 @@ main {
 
 main .encabezado {
   height: 303px;
-  width: 100%;
-  padding-left: 1em;
+  width: 95%;
 }
 
 main .encabezado h1 {
   word-spacing: 0.3em;
   height: 100px;
-  width: 80%;
+  width: 100%;
   font-size: 2.125em;
   color: #060a24;
   letter-spacing: 0;
   line-height: 34px;
   font-family: "IBM Plex Sans", sans-serif;
+  padding-left: .5em;
 }
 
 main .encabezado .p1 {
-  width: 90%;
+  width: 100%;
   height: 80px;
   margin-top: -1.75em;
   font-family: "IBMPlexMono", monospace;
@@ -176,6 +179,7 @@ main .encabezado .p1 {
   font-size: 0.9em;
   letter-spacing: 0;
   line-height: 22px;
+  padding-left: 1em;
 }
 
 main .encabezado .p2 {
@@ -183,7 +187,7 @@ main .encabezado .p2 {
 }
 
 main .encabezado .botn {
-  width: 16em;
+  width: 15.5em;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,6 +205,7 @@ main .encabezado .botn {
   text-decoration: none;
   border: 0;
   padding: 0.75em;
+  margin-left: 1em;
 }
 
 main .encabezado .botn:hover {
@@ -210,7 +215,8 @@ main .encabezado .botn:hover {
 
 @media screen and (min-width: 321px) {
   main .encabezado {
-    padding-left: 16%;
+    width: 84%;
+    margin-left: 8%;
   }
   main .encabezado h1 {
     display: block;
@@ -219,6 +225,7 @@ main .encabezado .botn:hover {
     font-size: 5.333em;
     color: #060a24;
     letter-spacing: 0;
+    margin-left: -35px;
   }
   main .encabezado h1 br {
     display: none;
@@ -266,7 +273,7 @@ main .encabezado .botn:hover {
 
 #episodios h2 {
   height: 42px;
-  width: 9.8em;
+  width: 85%;
   color: #ffffff;
   font-size: 36px;
   letter-spacing: 0;
@@ -366,7 +373,6 @@ main .encabezado .botn:hover {
   margin-top: -80px;
   width: 100%;
   height: 390px;
-  padding-left: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,6 +400,7 @@ main .encabezado .botn:hover {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 1em;
 }
 
 #nosotros #parraf p {
@@ -408,6 +415,7 @@ main .encabezado .botn:hover {
   line-height: 1.5em;
   text-align: left;
   padding-top: 0;
+  padding-left: 1em;
 }
 
 #nosotros #parrafo p {
@@ -712,8 +720,8 @@ p {
 }
 
 p .copyright {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
 }
 
 #iconos {

@@ -5,22 +5,24 @@ main {
 
     .encabezado {
         height: 303px;
-        width: 100%;
-        padding-left: 1em;
-
+        width: 95%;
+        
+    
+               
         h1 {
             word-spacing: 0.3em;
             height: 100px;
-            width: 80%;
+            width: 100%;
             font-size: 2.125em;
             color: #060a24;
             letter-spacing: 0;
             line-height: 34px;
             font-family: "IBM Plex Sans", sans-serif;
+            padding-left: .5em;
         }
 
         .p1 {
-            width: 90%;
+            width: 100%;
             height: 80px;
             margin-top: -1.75em;
             font-family: "IBMPlexMono", monospace;
@@ -28,12 +30,13 @@ main {
             font-size: 0.9em;
             letter-spacing: 0;
             line-height: 22px;
+            padding-left: 1em;
         }
         .p2 {
             display: none;
         }
         .botn {
-            width: 16em;
+            width: 15.5em;
             height: auto;
             display: flex;
             align-items: center;
@@ -45,6 +48,7 @@ main {
             text-decoration: none;
             border: 0;
             padding: 0.75em;
+            margin-left: 1em;
 
             &:hover {
                 background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
@@ -54,8 +58,9 @@ main {
     }
     @media screen and (min-width: 321px) {
         .encabezado {
-            padding-left: 16%;
-
+            width: 84%;
+            margin-left: 8%;
+                
             h1 {
                 display: block;
                 margin-top: 140px;
@@ -63,6 +68,7 @@ main {
                 font-size: 5.333em;
                 color: #060a24;
                 letter-spacing: 0;
+               margin-left:-35px ;
                 br {
                     display: none;
                 }
@@ -77,6 +83,7 @@ main {
             .p2 {
                 display: block;
                 margin-top: -80px;
+              // margin-left: 10%;
                 width: 44em;
                 height: 48px;
                 display: block;
@@ -91,7 +98,8 @@ main {
             width: 14.5em;
             height: 76px;
             margin-top: 36px;
-        }
+            
+                    }
     }
 }
 
@@ -105,7 +113,7 @@ main {
     flex-flow: column;
     h2 {
         height: 42px;
-        width: 9.8em;
+        width:85%;
         color: #ffffff;
         font-size: 36px;
         letter-spacing: 0;
@@ -185,7 +193,6 @@ main {
     margin-top: -80px;
     width: 100%;
     height: 390px;
-    padding-left: 1em;
     display: flex;
     flex-flow: row wrap;
 
@@ -201,6 +208,7 @@ main {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding-left: 1em;
     }
     #parraf {
         p {
@@ -215,6 +223,7 @@ main {
             line-height: 1.5em;
             text-align: left;
             padding-top: 0;
+            padding-left: 1em;
         }
     }
     #parrafo {

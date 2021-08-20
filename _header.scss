@@ -5,6 +5,8 @@ header {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    box-sizing: border-box;
+
 
     .bd {
         width: 26px;
@@ -77,10 +79,11 @@ header {
 
         .menu {
             display: block;
+            z-index: 5;
         }
     }
 }
-@media (min-width: 325px) {
+@media (min-width: 321px) {
     label ~ {
         .menu {
             display: block;
